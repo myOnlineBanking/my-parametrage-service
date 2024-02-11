@@ -1,0 +1,33 @@
+POST https://my-api-gateway-t.herokuapp.com/Parameter/calculateCost
+Content-Type: application/json
+
+{
+  "transferAmount": "10000",
+  "transferType":"ACCOUNT_TO_ACCOUNT"
+}
+
+###
+PUT https://my-parametrage-service.herokuapp.com/Parameter/update
+Content-Type: application/json
+
+{
+  "id": "61d1a23b7f5f6c1441eab31c",
+  "maxAmountForCashToCash": 6000,
+  "maxAmountForCashToAccount": 10000,
+  "maxAmountForAccountToCash": 10000,
+  "maxAmountForAccountToAccount": 20000,
+  "maxHoldingTimeForCashToCash": 48,
+  "maxHoldingTimeForCashToAccount": 24,
+  "maxHoldingTimeForAccountToCash": 48,
+  "maxHoldingTimeForAccountToAccount": 24,
+  "transferPercentageForCashToCash": 5,
+  "transferPercentageForCashToAccount": 2,
+  "transferPercentageForAccountToAccount": 0,
+  "transferPercentageForAccountToCash": 2
+}
+
+###
+GET https://my-parametrage-service.herokuapp.com/Parameter/get
+Accept: application/json
+
+###
